@@ -1,6 +1,6 @@
 const jsFile = [
   $.path.scripts.jquery,
-  // $.path.scripts.swiper,
+  $.path.scripts.swiper,
   $.path.scripts.src
 ];
 
