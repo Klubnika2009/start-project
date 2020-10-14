@@ -13,6 +13,7 @@ global.$ = {
   // Scripts
   concat: require('gulp-concat'),
   uglify: require('gulp-uglify'),
+  babel: require('gulp-babel'),
   // Clean
   del: require('del'),
   // Images

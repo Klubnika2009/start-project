@@ -1,10 +1,10 @@
-var test = new Swiper('.test-swiper', {
+const test = new Swiper('.test-swiper', {
   loop: true,
   effect: 'fade',
-  // autoplay: {
-  //   delay: 9000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 9000,
+    disableOnInteraction: false,
+  },
   
   //cssMode: true,
   navigation: {

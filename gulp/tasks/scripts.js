@@ -1,6 +1,6 @@
 const jsFile = [
   $.path.scripts.jquery,
-  $.path.scripts.swiper,
+  // $.path.scripts.swiper,
   $.path.scripts.src
 ];
 
@@ -22,6 +22,9 @@ module.exports = () => {
   $.gulp.task('scriptsprod', () => {
     return $.gulp.src(jsFile)
       .pipe($.concat('scripts.js'))
+      .pipe($.babel({
+        presets: ['@babel/env']
+      }))
       .pipe($.uglify())
       .pipe($.rename({
         basename: 'scripts',
